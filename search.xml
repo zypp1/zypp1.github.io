@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>Efficient Mixed-Integer Planning for UAVs in Cluttered Environments</title>
+      <title>Efficient Mixed-Integer Planning for UAVs in Cluttered Environments(ICRA2015)</title>
       <link href="/2024/12/14/Efficient-Mixed-Integer-Planning-for-UAVs-in-Cluttered-Environments/"/>
       <url>/2024/12/14/Efficient-Mixed-Integer-Planning-for-UAVs-in-Cluttered-Environments/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="Efficient-Mixed-Integer-Planning-for-UAVs-in-Cluttered-Environments"><a href="#Efficient-Mixed-Integer-Planning-for-UAVs-in-Cluttered-Environments" class="headerlink" title="Efficient Mixed-Integer Planning for UAVs in Cluttered Environments"></a>Efficient Mixed-Integer Planning for UAVs in Cluttered Environments</h1><h2 id="混合整数规划（Mixed-Integer-Programing-MIP）"><a href="#混合整数规划（Mixed-Integer-Programing-MIP）" class="headerlink" title="混合整数规划（Mixed Integer Programing, MIP）"></a>混合整数规划（Mixed Integer Programing, MIP）</h2><p>1、优化三要素：<strong>决策变量、约束条件、目标函数</strong>。根据三要素的不同，可以分为不同的类型。</p><p>2、在 <strong>混合整数规划（MIP）</strong> 问题中，一部分决策变量是连续的（可取任何实数值），而另一部分决策变量是离散的（只能取整数值）。</p><ul><li><strong>混合整数二次规划（MIQP）</strong> 问题：具有二次目标但没有二次约束 。</li><li><strong>混合整数二次约束规划（MIQCP）</strong> 问题：具有二次约束 。</li><li><strong>混合整数线性规划（MILP）</strong> 问题：没有任何二次特征。</li></ul><p>3、<strong>0-1整数规划</strong>：离散决策变量的取值为0或1。</p>]]></content>
       
       
       
