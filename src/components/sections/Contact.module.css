@@ -1,0 +1,81 @@
+.title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-variation-settings: 'opsz' 144;
+  font-size: clamp(2.4rem, 7vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-top: 1rem;
+}
+
+.intro {
+  max-width: 54ch;
+  color: var(--text-dim);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-top: 1.25rem;
+}
+
+.emailRow {
+  margin-top: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.email {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  color: var(--text);
+  border-bottom: 1px solid var(--line-strong);
+  padding-bottom: 0.3rem;
+  transition: color 0.4s var(--ease), border-color 0.4s var(--ease);
+}
+
+a.email:hover {
+  color: var(--accent-bright);
+  border-color: var(--accent);
+}
+
+.links {
+  margin-top: clamp(2rem, 4vw, 2.5rem);
+  border-top: 1px solid var(--line);
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.05rem;
+  border-bottom: 1px solid var(--line);
+  transition: color 0.4s var(--ease), transform 0.4s var(--ease);
+}
+
+a.linkItem:hover {
+  color: var(--accent-bright);
+  transform: translateX(6px);
+}
+
+.linkLabel {
+  font-size: 1rem;
+}
+
+.linkValue {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  letter-spacing: 0.02em;
+}
+
+.disabled {
+  opacity: 0.42;
+  pointer-events: none;
+}
+
+@media (max-width: 560px) {
+  .linkItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}

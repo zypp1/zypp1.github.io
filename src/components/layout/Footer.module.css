@@ -1,0 +1,39 @@
+.footer {
+  position: relative;
+  z-index: 1;
+  padding-block: clamp(3rem, 6vh, 4.5rem);
+  border-top: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 1.5rem;
+}
+
+.mark {
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+
+.toTop {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+  transition: color 0.4s var(--ease);
+}
+
+.toTop:hover {
+  color: var(--accent-bright);
+}
+
+.note {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  letter-spacing: 0.01em;
+}

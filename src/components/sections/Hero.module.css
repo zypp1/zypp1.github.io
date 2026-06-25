@@ -1,0 +1,104 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding-top: 68px;
+  overflow: hidden;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+}
+
+.eyebrow {
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-variation-settings: 'opsz' 144;
+  font-size: clamp(3rem, 11vw, 8rem);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  color: var(--text);
+}
+
+.positioning {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-top: clamp(1.25rem, 2.5vw, 1.75rem);
+  max-width: 22ch;
+}
+
+.desc {
+  max-width: 56ch;
+  color: var(--text-dim);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin-top: clamp(1.25rem, 2.5vw, 1.75rem);
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: clamp(2rem, 4vw, 2.75rem);
+}
+
+.cue {
+  position: absolute;
+  bottom: clamp(1.5rem, 4vh, 2.5rem);
+  left: var(--gutter);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.cueLine {
+  position: relative;
+  width: 1px;
+  height: 48px;
+  background: var(--line-strong);
+  overflow: hidden;
+}
+
+.cueLine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: var(--accent);
+  animation: cueSlide 2.2s var(--ease) infinite;
+}
+
+@keyframes cueSlide {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(250%);
+  }
+}
+
+@media (max-width: 760px) {
+  .cue {
+    display: none;
+  }
+}
