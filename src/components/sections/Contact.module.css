@@ -32,7 +32,7 @@
 }
 
 a.email:hover {
-  color: var(--accent-bright);
+  color: var(--accent);
   border-color: var(--accent);
 }
 
@@ -52,7 +52,7 @@ a.email:hover {
 }
 
 a.linkItem:hover {
-  color: var(--accent-bright);
+  color: var(--accent);
   transform: translateX(6px);
 }
 

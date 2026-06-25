@@ -146,7 +146,7 @@
 }
 
 .material:hover {
-  color: var(--accent-bright);
+  color: var(--accent);
   border-color: var(--accent);
 }
 

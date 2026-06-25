@@ -54,8 +54,7 @@
   font-variation-settings: 'opsz' 144;
   font-size: clamp(3rem, 6vw, 5rem);
   line-height: 1;
-  color: var(--text-faint);
-  opacity: 0.45;
+  color: rgba(28, 28, 32, 0.12);
 }
 
 .tag {

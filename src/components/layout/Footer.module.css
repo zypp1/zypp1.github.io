@@ -29,7 +29,7 @@
 }
 
 .toTop:hover {
-  color: var(--accent-bright);
+  color: var(--accent);
 }
 
 .note {
